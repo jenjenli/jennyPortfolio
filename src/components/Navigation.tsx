@@ -9,9 +9,9 @@ interface NavigationProps {
 export function Navigation({ activeSection, onNavigate }: NavigationProps) {
   const navItems = [
     { id: 'home', label: 'Origin', icon: Rocket }, // Changed icon to Rocket
-    { id: 'about', label: 'Explorer', icon: Telescope }, // Changed icon to Telescope
-    { id: 'projects', label: 'Missions', icon: Satellite }, // Changed icon to Satellite
+    // { id: 'about', label: 'Explorer', icon: Telescope }, // Changed icon to Telescope
     { id: 'skills', label: 'Arsenal', icon: Zap }, // Changed icon to Zap
+    { id: 'projects', label: 'Missions', icon: Satellite }, // Changed icon to Satellite
     { id: 'contact', label: 'Transmission', icon: MessageSquare }, // Changed icon to MessageSquare
   ];
 

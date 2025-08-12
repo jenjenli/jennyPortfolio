@@ -23,7 +23,7 @@ export function SkillsSection() {
       skills: [
         { name: "React/Next.js", level: 95 },
         { name: "TypeScript", level: 90 },
-        { name: "Three.js/WebGL", level: 85 },
+        { name: "HTML", level: 95 },
         { name: "Tailwind CSS", level: 92 },
       ],
     },
@@ -33,7 +33,7 @@ export function SkillsSection() {
         { name: "Node.js", level: 88 },
         { name: "Python", level: 85 },
         { name: "PostgreSQL", level: 82 },
-        { name: "GraphQL", level: 78 },
+        { name: "JavaScript", level: 78 },
       ],
     },
     {
@@ -41,8 +41,9 @@ export function SkillsSection() {
       skills: [
         { name: "Git/GitHub", level: 92 },
         { name: "Docker", level: 85 },
-        { name: "AWS", level: 80 },
         { name: "Figma", level: 75 },
+        { name: "Jenkins", level: 75 },
+
       ],
     },
   ];
@@ -64,26 +65,34 @@ export function SkillsSection() {
 
   const experience = [
     {
-      title: "Senior Frontend Developer",
-      company: "Tech Innovations Inc.",
-      period: "2022 - Present",
+      title: "Software Engineer Intern",
+      company: "EBSCO Information Services",
+      period: "June 2025 - August 2025",
       description:
-        "Leading development of complex web applications using React and Three.js",
+        "Built New Relic dashboards analyzing 3.84M+ transactions, developed end-to-end governance systems with API standardization using OpenAPI/Swagger, reducing developer onboarding time by 13.5%",
     },
     {
-      title: "Full Stack Developer",
-      company: "Digital Solutions Ltd.",
-      period: "2020 - 2022",
+      title: "Fellow",
+      company: "Break Through Tech At MIT",
+      period: "May 2025 - Present",
       description:
-        "Built scalable web applications and APIs for various client projects",
+        "Built machine learning models including neural networks and price prediction systems using Python, pandas, and scikit-learn to analyze 100+ Airbnb listings with data preprocessing and feature engineering",
     },
     {
-      title: "Junior Developer",
-      company: "StartUp Studios",
-      period: "2019 - 2020",
+      title: "Software Engineer Intern",
+      company: "LOOK!",
+      period: "March 2025 - June 2025",
       description:
-        "Contributed to multiple projects focusing on modern web technologies",
+        "Led 4-people engineer backend team developing Django REST APIs with PostgreSQL and Firebase authentication, serving 100+ users and reducing signup friction by 10%",
     },
+    {
+      title: "Full-Stack Software Engineer Intern/ Research Product Developer",
+      company: "Governance Research Lab",
+      period: "October 2024 - May 2025",
+      description: "Engineered a React.js misinformation simulation with LLMs for 100+ participants across 5+ experiments, optimizing server infrastructure on Google Cloud"
+    },
+
+    
   ];
 
   return (

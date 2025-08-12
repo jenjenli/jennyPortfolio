@@ -20,39 +20,20 @@ export function ProjectsSection() {
   const projects = [
     {
       id: 1,
-      title: 'Thirumathi Kart',
-      description: 'A women-focused e-commerce platform featuring dynamic cart, wishlist, seller integration, and a sleek React + Golang ecosystem.',
-      image: '/images/thirumathi-kart.jpg',
-      technologies: ['React.js', 'TailwindCSS', 'Golang', 'PostgreSQL'],
-      liveUrl: 'https://thirumathikart.vercel.app', // or actual hosted URL
-      githubUrl: 'https://github.com/dhanasekar-m/thirumathi-kart'
+      title: 'Job Finder',
+      description: 'College students can find internships and job opportunities through this platform, which connects them with companies looking for fresh talent. Complete with a frontend, backend, and gateway.',
+      video: './public/jobDemo.mov',
+      technologies: ['React.js', 'Next.js', 'Jobicy API', 'Gateway'],
+      liveUrl: 'https://nextandhooks.vercel.app/',
+      githubUrl: 'https://github.com/jenjenli/nextandhooks'
     },
     {
       id: 2,
-      title: 'GoodFiction',
-      description: 'A story-sharing platform built for passionate writers, featuring JWT auth, story browsing, and profile personalization.',
-      image: '/images/goodfiction.jpg',
-      technologies: ['React.js', 'Framer Motion', 'Golang', 'JWT', 'PostgreSQL'],
-      liveUrl: 'https://goodfiction.vercel.app',
-      githubUrl: 'https://github.com/dhanasekar-m/goodfiction'
-    },
-    {
-      id: 3,
-      title: 'ML Salary Predictor',
-      description: 'A Machine Learning-based web app that predicts salary using user input and regression models, with detailed project report.',
-      image: '/images/salary-predictor.jpg',
-      technologies: ['Python', 'Scikit-Learn', 'Flask', 'React.js'],
-      liveUrl: '#',
-      githubUrl: 'https://github.com/dhanasekar-m/ml-salary-predictor'
-    },
-    {
-      id: 4,
-      title: 'Narcotic Drug Detector',
-      description: 'A dual-mode system using iris scanning and environmental sensing to detect drug abuse, powered by IoT & ML.',
-      image: '/images/narcotic-detector.jpg',
-      technologies: ['Python', 'OpenCV', 'ML Models', 'IoT', 'Flask'],
-      liveUrl: '#',
-      githubUrl: 'https://github.com/dhanasekar-m/narcotic-detector'
+      title: 'CoverCraft',
+      description: 'A full-stack Flask application that generates personalized cover letters using AI and external NLP APIs. The platform features a responsive UI for seamless user interaction and implements CSV-based data storage to build a scalable dataset for continuous model enhancement.',
+      video: './public/CoverCraft.mp4',
+      technologies: ['HTML', 'CSS', 'Python', 'Flask', 'CSV', 'NLP API'],
+      githubUrl: 'https://github.com/jenjenli/CoverCraft'
     }
   ];
 
@@ -109,16 +90,26 @@ export function ProjectsSection() {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-8">
+        <div className="grid md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 gap-8">
           {projects.map((project) => (
             <div
               key={project.id}
               className="bg-white/5 backdrop-blur-lg border border-white/10 rounded-2xl overflow-hidden hover:border-blue-500/50 shadow-lg transition-all duration-300 group flex flex-col"
               style={{ boxShadow: '0 4px 48px 0 rgba(40,40,80,0.4)' }}
             >
-              {/* Project Image */}
-              <div className="h-48 bg-gradient-to-br from-blue-500/10 to-purple-500/10 flex items-center justify-center">
-                <span className="text-5xl animate-pulse-slow select-none">🚀</span>
+              {/* Project Video */}
+              <div className="h-48 bg-gradient-to-br from-blue-500/10 to-purple-500/10 flex items-center justify-center overflow-hidden">
+                <video
+                  className="w-full h-full object-cover"
+                  autoPlay
+                  loop
+                  muted
+                  playsInline
+                >
+                  <source src={project.video} type="video/mp4" />
+                  <source src={project.video} type="video/quicktime" />
+                  Your browser does not support the video tag.
+                </video>
               </div>
 
               {/* Project Content */}

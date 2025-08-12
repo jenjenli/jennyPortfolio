@@ -104,7 +104,7 @@ export function AnimatedToolkits() {
 export default function HeroSection() {
   const [text, setText] = useState("");
   const [showCursor, setShowCursor] = useState(true);
-  const fullText = "Full-Stack Dev | ML Innovator | UI Astronaut";
+  const fullText = "Software Engineer | ML Innovator";
   const heroRef = useRef<HTMLDivElement>(null);
   const stars = useStars(120);
 
@@ -176,7 +176,7 @@ export default function HeroSection() {
         <div className="space-y-8">
           <h5 className="text-4xl md:text-5xl font-bold text-white">Hi, I'm</h5>
           <h1 className="text-5xl md:text-6xl font-extrabold bg-gradient-to-r from-cyan-400 via-blue-400 to-purple-500 bg-clip-text text-transparent animate-pulse">
-            Dhanasekar
+            Jenny Li
           </h1>
           <p className="text-xl text-cyan-300 font-light tracking-wider">
             {text}
@@ -186,26 +186,27 @@ export default function HeroSection() {
           </p>
           <div className="flex items-center space-x-3 animate-slide-in-right">
             <div className="w-3 h-3 bg-gradient-to-r from-orange-400 to-red-500 rounded-full animate-pulse" />
-            <p className="text-lg text-gray-300"> Trichy, India</p>
+            <p className="text-lg text-gray-300"> New York City, New York</p>
           </div>
           <p className="text-base text-gray-300 leading-relaxed max-w-lg">
-            I build immersive, intelligent web systems using React, Golang, PostgreSQL, and Python.
-            From cosmic interfaces to machine learning galaxies — I orbit around creativity and impact.
+          I love the blend of creativity and logic in software engineering—whether I'm developing web apps, diving into algorithms, 
+          or collaborating on team projects. When I'm not coding, you'll find me exploring new tech, grabbing matcha with friends, 
+          or debugging life one step at a time ☕💻.
           </p>
           <div className="flex gap-4">
-            <button className="bg-gradient-to-r from-cyan-500 to-purple-500 px-6 py-3 text-white rounded-lg hover:scale-105 transition-transform">
+            {/* <button className="bg-gradient-to-r from-cyan-500 to-purple-500 px-6 py-3 text-white rounded-lg hover:scale-105 transition-transform">
               View My Galaxy
             </button>
             <button className="border border-cyan-400 px-6 py-3 text-cyan-300 rounded-lg hover:bg-cyan-500/10 transition-all">
               Let's Collaborate
-            </button>
+            </button> */}
           </div>
           {/* Stats */}
           <div className="grid grid-cols-3 gap-6 pt-8 animate-fade-in" style={{ animationDelay: '1s' }}>
             {[
-              { label: 'Production Projects', value: '10+' },
-              { label: 'Tech Stack Depth', value: '20+' },
-              { label: 'Space UI Missions', value: '∞' },
+              { label: 'Production Projects', value: '5+' },
+              { label: 'Internships', value: '3+' },
+              { label: 'Tech Stack Depth', value: '10+' },
             ].map((stat) => (
               <div key={stat.label} className="text-center group hover:scale-110 transition-transform duration-300">
                 <div className="text-3xl font-bold bg-gradient-to-r from-cyan-400 to-purple-400 bg-clip-text text-transparent mb-2 animate-pulse">

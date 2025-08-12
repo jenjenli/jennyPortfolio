@@ -50,9 +50,9 @@ export default function App() {
           <HeroSection />
         </section>
 
-        <section id="about" className="min-h-screen" aria-label="About">
+        {/* <section id="about" className="min-h-screen" aria-label="About">
           <AboutSection />
-        </section>
+        </section> */}
 
         <section id="skills" className="min-h-screen" aria-label="Skills">
           <SkillsSection />

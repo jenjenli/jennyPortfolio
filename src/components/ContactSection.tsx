@@ -30,13 +30,13 @@ export function ContactSection() {
   const stars = useStars(120);
 
   const contactInfo = [
-    { icon: Mail, label: 'Email', value: 'dhanasekarmurgesan@gmail.com', href: 'mailto:dhanasekarmurgesan@gmail.com', color: 'bg-blue-700' },
-    { icon: MapPin, label: 'Location', value: 'Trichy, India', href: '#', color: 'bg-purple-700' },
+    { icon: Mail, label: 'Email', value: 'jli26@bu.edu', href: 'jli26@bu.edu', color: 'bg-blue-700' },
+    { icon: MapPin, label: 'Location', value: 'New York City, New York', href: '#', color: 'bg-purple-700' },
   ];
 
   const socialLinks = [
-    { icon: Github, href: 'https://github.com/Dhanas3kar', label: 'GitHub' },
-    { icon: Linkedin, href: 'https://www.linkedin.com/in/dhanasekar-murugesan-a9321731a/', label: 'LinkedIn' },
+    { icon: Github, href: 'https://github.com/jenjenli', label: 'GitHub' },
+    { icon: Linkedin, href: 'https://www.linkedin.com/in/jenny-l-908375244/', label: 'LinkedIn' },
 
   ];
 
@@ -110,7 +110,7 @@ export function ContactSection() {
           Let's Connect
         </h1>
         <p className="text-center text-blue-100/80 text-lg mb-12 max-w-2xl">
-          Ready to collaborate on AI, research and innovation? Let's discuss how we can build the future together.
+          Want to collaborate or just say hi? Feel free to reach out through any of the channels below.
         </p>
         <div className="flex flex-col md:flex-row gap-8 w-full justify-center">
           {/* Left Card */}
@@ -152,7 +152,7 @@ export function ContactSection() {
             </div>
           </div>
           {/* Right Card */}
-          <div className="flex-1 bg-white/5 backdrop-blur-lg border border-white/10 rounded-2xl shadow-lg p-8 min-w-[320px] max-w-md flex flex-col justify-between"
+          {/* <div className="flex-1 bg-white/5 backdrop-blur-lg border border-white/10 rounded-2xl shadow-lg p-8 min-w-[320px] max-w-md flex flex-col justify-between"
             style={{ boxShadow: '0 4px 48px 0 rgba(40,40,80,0.4)' }}>
             <h2 className="text-2xl font-bold text-blue-100 mb-6" style={{ fontFamily: 'monospace' }}>
               Send a Message
@@ -199,7 +199,7 @@ export function ContactSection() {
                 </svg>
               </button>
             </form>
-          </div>
+          </div> */}
         </div>
       </div>
       {/* CSS for star animation */}
