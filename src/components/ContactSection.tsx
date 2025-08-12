@@ -36,7 +36,7 @@ export function ContactSection() {
 
   const socialLinks = [
     { icon: Github, href: 'https://github.com/jenjenli', label: 'GitHub' },
-    { icon: Linkedin, href: 'https://www.linkedin.com/in/jenny-l-908375244/', label: 'LinkedIn' },
+    { icon: Linkedin, href: 'https://www.linkedin.com/in/jenjenli/', label: 'LinkedIn' },
 
   ];
 
