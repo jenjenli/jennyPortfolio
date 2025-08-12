@@ -22,7 +22,7 @@ export function ProjectsSection() {
       id: 1,
       title: 'Job Finder',
       description: 'College students can find internships and job opportunities through this platform, which connects them with companies looking for fresh talent. Complete with a frontend, backend, and gateway.',
-      video: '/public/jobDemo.mov',
+      video: '/jobDemo.mov',
       technologies: ['React.js', 'Next.js', 'Jobicy API', 'Gateway'],
       liveUrl: 'https://nextandhooks.vercel.app/',
       githubUrl: 'https://github.com/jenjenli/nextandhooks'
@@ -31,7 +31,7 @@ export function ProjectsSection() {
       id: 2,
       title: 'CoverCraft',
       description: 'A full-stack Flask application that generates personalized cover letters using AI and external NLP APIs. The platform features a responsive UI for seamless user interaction and implements CSV-based data storage to build a scalable dataset for continuous model enhancement.',
-      video: '/public/CoverCraft.mp4',
+      video: '/CoverCraft.mp4',
       technologies: ['HTML', 'CSS', 'Python', 'Flask', 'CSV', 'NLP API'],
       githubUrl: 'https://github.com/jenjenli/CoverCraft'
     }
