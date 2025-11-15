@@ -1,5 +1,6 @@
 import { useMemo } from 'react';
 import { ExternalLink, Github } from 'lucide-react';
+import { title } from 'process';
 
 function useStars(count = 70) {
   return useMemo(
@@ -18,8 +19,16 @@ function useStars(count = 70) {
 
 export function ProjectsSection() {
   const projects = [
+    {id: 1,
+      title: 'Campaign Aid',
+      description: 'A full stack web application that helps political campaign volunteers manage canvassing efforts more effectively. Features include voter infromation, political data visualization, and voter location. Built with Django and styled with CSS.',
+      video: '/campaignAid.mp4',
+      technologies: ['HTML', 'CSS', 'Django'],
+      liveUrl: 'https://cs-webapps.bu.edu/jli26/voter_analytics/voters',
+      githubUrl: 'https://github.com/jli-26/cs412/tree/main/voter_analytics'
+    },
     {
-      id: 1,
+      id: 2,
       title: 'Job Finder',
       description: 'College students can find internships and job opportunities through this platform, which connects them with companies looking for fresh talent. Complete with a frontend, backend, and gateway.',
       video: '/jobDemo.mov',
@@ -28,7 +37,7 @@ export function ProjectsSection() {
       githubUrl: 'https://github.com/jenjenli/nextandhooks'
     },
     {
-      id: 2,
+      id: 3,
       title: 'CoverCraft',
       description: 'A full-stack Flask application that generates personalized cover letters using AI and external NLP APIs. The platform features a responsive UI for seamless user interaction and implements CSV-based data storage to build a scalable dataset for continuous model enhancement.',
       video: '/CoverCraft.mp4',
