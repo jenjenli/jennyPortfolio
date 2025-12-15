@@ -20,6 +20,13 @@ function useStars(count = 70) {
 export function ProjectsSection() {
   const projects = [
     {id: 1,
+      title: 'CNN-LSTM Speech denoising',
+      description: 'A deep learning model that combines Convolutional Neural Networks (CNN) and Long Short-Term Memory (LSTM) networks to effectively denoise speech signals. The model is trained on a dataset of noisy and clean speech pairs, achieving significant improvements in audio quality.',
+      video: '/results.mp4',
+      technologies: ['Matlab', 'Deep Learning', 'CNN', 'LSTM'],
+      githubUrl: "https://github.com/BTTAI-9/Team-9"
+    },
+    {id: 2,
       title: 'Campaign Aid',
       description: 'A full stack web application that helps political campaign volunteers manage canvassing efforts more effectively. Features include voter infromation, political data visualization, and voter location. Built with Django and styled with CSS.',
       video: '/campaignAid.mp4',
@@ -28,7 +35,7 @@ export function ProjectsSection() {
       githubUrl: 'https://github.com/jli-26/cs412/tree/main/voter_analytics'
     },
     {
-      id: 2,
+      id: 3,
       title: 'Job Finder',
       description: 'College students can find internships and job opportunities through this platform, which connects them with companies looking for fresh talent. Complete with a frontend, backend, and gateway.',
       video: '/jobDemo.mov',
@@ -37,7 +44,7 @@ export function ProjectsSection() {
       githubUrl: 'https://github.com/jenjenli/nextandhooks'
     },
     {
-      id: 3,
+      id: 4,
       title: 'CoverCraft',
       description: 'A full-stack Flask application that generates personalized cover letters using AI and external NLP APIs. The platform features a responsive UI for seamless user interaction and implements CSV-based data storage to build a scalable dataset for continuous model enhancement.',
       video: '/CoverCraft.mp4',
